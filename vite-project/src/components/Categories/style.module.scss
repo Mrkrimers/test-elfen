@@ -1,0 +1,97 @@
+.sectionCategories {
+    margin: 50px;
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font: 500 60px Euclid Circular A;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .svgMirrors {
+            background-image: url(./assets/inactive_SVG/mirrors.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 428px;
+            height: 517px;
+
+            flex-shrink: 0;
+
+            &:hover {
+                background-image: url(./assets/active_SVG/mirrors_active.svg);
+                cursor: pointer;
+            }
+
+            &.active {
+                background-image: url(./assets/active_SVG/mirrors_active.svg);
+            }
+        }
+
+        .svgLamps {
+            background-image: url(./assets/inactive_SVG/lamps.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 428px;
+            height: 517px;
+
+            flex-shrink: 0;
+
+            &:hover {
+                background-image: url(./assets/active_SVG/lamps_active.svg);
+                cursor: pointer;
+            }
+
+            &.active {
+                background-image: url(./assets/active_SVG/lamps_active.svg);
+            }
+        }
+
+        .svgArmchairs {
+            background-image: url(./assets/inactive_SVG/armchairs.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 428px;
+            height: 517px;
+
+            flex-shrink: 0;
+
+            &:hover {
+                background-image: url(./assets/active_SVG/armchairs_active.svg);
+                cursor: pointer;
+            }
+
+            &.active {
+                background-image: url(./assets/active_SVG/armchairs_active.svg);
+            }
+        }
+
+        .svgTable {
+            background-image: url(./assets/inactive_SVG/table.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 428px;
+            height: 517px;
+
+            flex-shrink: 0;
+
+            &:hover {
+                background-image: url(./assets/active_SVG/table_active.svg);
+                cursor: pointer;
+            }
+
+            &.active {
+                background-image: url(./assets/active_SVG/table_active.svg);
+            }
+        }
+    }
+}

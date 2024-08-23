@@ -1,0 +1,145 @@
+.modal {
+    padding: 35px 50px;
+    border-radius: 30px;
+    backdrop-filter: blur(200px);
+    background: rgba(51, 32, 101, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 45px;
+
+    max-width: 619px;
+    width: 590px;
+
+    position: fixed;
+    right: 7%;
+    top: 10%;
+    z-index: 10000000000000000000000000000000000;
+
+    .titleAndClose {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font: 500 18px Euclid Circular A;
+            text-transform: uppercase;
+        }
+
+        .closeBtn {
+            background-color: transparent;
+            border: none;
+            font-size: 34px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0;
+            color: rgb(255, 255, 255);
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .inputsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        gap: 35px;
+
+        .inputWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 35px;
+
+            label {
+                border-bottom: 2px solid rgb(217, 255, 90);
+                background-color: transparent;
+                padding: 4px 0px;
+
+                input {
+                    width: 90%;
+                    border: none;
+                    outline: none;
+
+                    background: transparent;
+
+                    color: rgb(255, 255, 255);
+                    font: 500 16px Euclid Circular A;
+
+                    &::placeholder {
+                        color: rgb(255, 255, 255);
+                        font: 500 16px Euclid Circular A;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .btnReg {
+            border: 1px solid rgb(217, 255, 90);
+            background: rgba(235, 227, 255, 0.19);
+            border-radius: 100%;
+            transform: rotate(-6deg);
+            cursor: pointer;
+            width: 189px;
+            height: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: rgb(255, 255, 255);
+                font: 500 20px Euclid Circular A;
+                text-align: center;
+                transform: rotate(6deg);
+            }
+
+            &:hover {
+                p {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .transition {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+
+            p {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font: 500 15px Euclid Circular A;
+            text-transform: uppercase;
+        }
+
+        .svgArrow {
+            background-image: url('./assets/ArrowGoLeft.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 46px;
+            height: 15px;
+        }
+    }
+}

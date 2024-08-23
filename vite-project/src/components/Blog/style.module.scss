@@ -1,0 +1,35 @@
+.sectionBlog {
+    position: relative;
+    margin: auto 50px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font: 500 60px Euclid Circular A;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font: 400 40px Floreste;
+            text-transform: uppercase;
+        }
+    }
+
+    .swiperWrapper {
+        .imgContainer {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

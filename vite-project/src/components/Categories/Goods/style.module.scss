@@ -1,0 +1,170 @@
+.goodsSection {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .svgWrapper {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+
+            .svg {
+                background-image: url('./assets/filter.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                color: rgb(255, 255, 255);
+                font: 500 18px Euclid Circular A;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font: 500 15px Euclid Circular A;
+            text-transform: uppercase;
+        }
+    }
+
+    .allGoods {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+
+        .goodsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+
+            max-width: 300px;
+            width: 300px;
+
+            .imgWrapper {
+                text-align: center;
+            }
+
+            h3 {
+                color: rgb(255, 255, 255);
+                font: 500 28px Euclid Circular A;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: rgb(255, 255, 255);
+                font: 500 15px Euclid Circular A;
+                text-align: center;
+            }
+
+            .line {
+                width: 100%;
+                border: 2px solid rgb(217, 255, 90);
+            }
+
+            .priceFlex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .price {
+                    display: flex;
+                    gap: 3px;
+
+                    h4 {
+                        color: rgb(255, 255, 255);
+                        font: 400 28px Floreste;
+                        text-transform: uppercase;
+                    }
+
+                    .svgRub {
+                        background-image: url('./assets/₽.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 13px;
+                        height: 14px;
+                    }
+                }
+
+                .btnBuy {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        p {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .svgShoping {
+                        background-image: url('./assets/shoping.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    p {
+                        color: rgb(255, 255, 255);
+                        font: 500 20px Euclid Circular A;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnLoading {
+        margin-top: 30px;
+        border: 2px solid rgb(217, 255, 90);
+        backdrop-filter: blur(30.27px);
+        background: rgba(255, 255, 255, 0.19);
+        border-radius: 100%;
+        padding: 40px 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: rotate(-13.00deg);
+
+        &:hover {
+            cursor: pointer;
+
+            p {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font: 500 20px Euclid Circular A;
+            transform: rotate(13deg);
+        }
+
+        .svgArrow {
+            background-image: url('./assets/arrow-down.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            transform: rotate(13deg);
+        }
+    }
+}

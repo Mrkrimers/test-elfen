@@ -1,0 +1,63 @@
+.linesWrapper {
+    position: relative;
+    margin: 190px 0;
+    height: 100px;
+
+    .firstLine {
+        position: absolute;
+        padding: 8px 0;
+
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(203, 182, 255);
+
+        transform: rotate(5.00deg);
+
+        p {
+            color: rgba(255, 255, 255, 1);
+            font: 400 40px Floreste;
+        }
+
+        .svgStar {
+            background-image: url(./assets/Star.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+    .secondLine {
+        position: absolute;
+        padding: 8px 0;
+
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(174, 206, 255);
+
+        transform: rotate(-2.00deg);
+
+        p {
+            color: rgba(255, 255, 255, 1);
+            font: 400 40px Floreste;
+        }
+
+        .svgStar {
+            background-image: url(./assets/Star.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 21px;
+            height: 21px;
+        }
+    }
+}

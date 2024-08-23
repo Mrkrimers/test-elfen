@@ -1,0 +1,199 @@
+.modal {
+    padding: 35px 50px;
+    border-radius: 30px;
+    backdrop-filter: blur(200px);
+    background: rgba(51, 32, 101, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+
+    max-width: 619px;
+    width: 590px;
+
+    position: fixed;
+    right: 7%;
+    top: 10%;
+    z-index: 10000000000000000000000000000000000;
+
+    .titleAndClose {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font: 500 18px Euclid Circular A;
+            text-transform: uppercase;
+        }
+
+        .closeBtn {
+            background-color: transparent;
+            border: none;
+            font-size: 34px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0;
+            color: rgb(255, 255, 255);
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .goodsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 20px;
+
+        .itemContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            .imgWrapper {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .goodsDescription {
+                position: relative;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: space-between;
+                gap: 15px;
+
+                .btnBasket {
+                    position: absolute;
+                    right: 2%;
+                    top: 2%;
+                    background-image: url('./assets/basket_modal.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 30px;
+                    height: 33px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                h2 {
+                    color: rgb(255, 255, 255);
+                    font: 500 20px Euclid Circular A;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: rgb(255, 255, 255);
+                    font: 500 18px Euclid Circular A;
+                }
+
+                .line {
+                    border: 1px solid rgb(217, 255, 90);
+                }
+
+                .priceAndCount {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: rgb(255, 255, 255);
+                        font: 400 28px Floreste;
+                        text-transform: uppercase;
+                    }
+
+                    .counterWrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+
+                        button {
+                            width: 45px;
+                            height: 45px;
+                            font-size: 18px;
+
+                            color: rgb(255, 255, 255);
+
+                            border: 2px solid rgb(255, 255, 255);
+                            border-radius: 100%;
+                            background: rgba(255, 255, 255, 0.19);
+
+                            cursor: pointer;
+                            transition: color 0.3s ease;
+                            opacity: 50%;
+
+                            &:hover {
+                                opacity: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .totalAndOrder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .totalWrapper {
+
+            p {
+                color: rgb(255, 255, 255);
+                font: 500 20px Euclid Circular A;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: rgb(255, 255, 255);
+                font: 400 40px Floreste;
+                text-transform: uppercase;
+            }
+        }
+
+        .orederBtn {
+            border: 2px solid rgb(217, 255, 90);
+            background: rgba(235, 227, 255, 0.19);
+            padding: 43px 48px;
+            border-radius: 100%;
+            transform: rotate(-6.00deg);
+            cursor: pointer;
+
+            p {
+                color: rgb(255, 255, 255);
+                font: 500 20px Euclid Circular A;
+                text-align: center;
+                transform: rotate(6deg);
+            }
+
+            &:hover {
+                p {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
